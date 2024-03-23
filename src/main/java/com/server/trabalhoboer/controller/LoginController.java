@@ -15,7 +15,7 @@ public class LoginController {
     
     @PostMapping
     public void redirectToClient(@RequestBody MultiValueMap<String, String> formData, HttpServletResponse response) {
-        response.setHeader("Location", "https://appdashboard-ybv0.onrender.com/#/login?token=" + formData.getFirst("credential"));
+        response.setHeader("Location", "http://localhost:3000/Dashboard");
         response.setStatus(302);
     }
 
